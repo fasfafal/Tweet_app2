@@ -1,0 +1,8 @@
+         <%= form_with(model: @user, local:true) do |f| %>
+          <div><%= f.label :"ユーザー名" %></div>
+          <div><%= f.text_field :name %></div>
+          <div><%= f.label :"メールアドレス" %></div>
+          <div><%= f.text_field :email %></div>
+          <div><%= f.submit "保存" %></div>
+        <% end %>
+      
